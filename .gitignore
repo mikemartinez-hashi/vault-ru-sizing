@@ -1,0 +1,18 @@
+# Tool output. These contain real estate detail — namespace names, mount paths,
+# per-mount secret counts — so they must never reach a public repo.
+ru-report/
+ru_summary*.txt
+ru_inventory*.csv
+ru_highwater.txt
+
+# Sample histories built by --sample-to (same reason, plus they accumulate).
+*.ndjson
+
+# Audit logs, in case one is ever staged here for a local run.
+*.log
+*.log.gz
+audit*.gz
+
+__pycache__/
+*.pyc
+.DS_Store
